@@ -8,11 +8,18 @@ piGlow(function (error, pi) {
     return console.log('Could not initialize PiGlow board');
   }
 
+	pi.all=100;
+	setTimeout(function() {
+		pi.all=0;
+		pi.ring_0=50;
+		pi.ring_5=50;
+	}, 1000);
+
   setInterval(function () {
     i++;
     pi.all = 0;
     var leg = glowLeg[i % 3];
     pi[leg] = 100;
-  }, 2000);
+  }, 5000);
 
 });
