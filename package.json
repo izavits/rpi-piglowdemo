@@ -1,0 +1,17 @@
+{
+	"name": "piglow-demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"prestart": "bash ./deps.sh",
+		"start": "node app.js"
+	},
+	"author": "izavits <izavits@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.14.0",
+		"piglow": "3.0.1",
+		"socket.io": "^1.4.8"
+	}
+}
